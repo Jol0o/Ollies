@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.navbar li {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 10px;
+  padding: 5px 10px;
+  color: #3b3b3b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+.header .logo img {
+  height: 100px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+
+.banner {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: 2s ease;
+}
+
+.banner .glass-wrapper {
+  width: 30%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-title {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 13rem;
+}
+
+.hero-title p {
+  font-size: clamp(15px, 4vw, 25px);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 5px #3b3b3b;
+}
+
+.hero-title .country {
+  font-size: clamp(20px, 4vw, 50px);
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 5px #3b3b3b;
+}
+
+.hero-title .details {
+  text-shadow: 1px 1px 1px #3b3b3b;
+  width: 60%;
+  padding-top: 1.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: clamp(12px, 4vw, 20px);
+  letter-spacing: 1.5px;
+  padding-bottom: 2.5rem;
+}
+
+.hero-title .explore button {
+  background: rgba(189, 189, 189, 0.299);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: none;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.tourist-list {
+  bottom: 25px;
+  position: absolute;
+  left: 35rem;
+}
+
+.tourist-list p {
+  color: #fff;
+  padding-left: 20px;
+  margin-bottom: auto;
+  line-height: 24px;
+}
+
+.tourist-list ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  width: 65vw;
+  height: 15rem;
+  align-items: center;
+}
+
+.tourist-list .thumbnail {
+  display: flex;
+  height: 10rem;
+  width: 18rem;
+  background-size: cover !important;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.tourist-list .thumbnail .details {
+  margin-top: auto;
+  padding: 10px 0px;
+  background: rgba(38, 38, 38, 0.05);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.details .place-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.details .province {
+  font-weight: 300;
+}
+
+.tourist-list .active {
+  margin-top: -5rem;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
